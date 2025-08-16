@@ -1,6 +1,6 @@
 [build]
   publish = "frontend/build"
-  command = "cd frontend && chmod +x netlify-build.sh && ./netlify-build.sh"
+  command = "cd frontend && npm ci --legacy-peer-deps && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
