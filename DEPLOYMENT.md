@@ -20,6 +20,9 @@ npm run build
 ### 3. Environment Variables in Netlify
 Add these environment variables in Netlify dashboard:
 - `REACT_APP_API_URL` = Your backend URL (e.g., https://your-backend.herokuapp.com)
+- `NODE_ENV` = production
+
+**Important**: Make sure to set the `REACT_APP_API_URL` to your actual deployed backend URL.
 
 ## Backend Deployment (Heroku/Railway/Render)
 
