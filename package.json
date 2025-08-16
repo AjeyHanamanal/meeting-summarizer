@@ -10,7 +10,7 @@
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "build": "cd frontend && npm run build",
     "start": "cd backend && npm start",
-    "netlify-build": "npm run install-all && npm run build"
+    "netlify-build": "cd frontend && npm install --legacy-peer-deps && npm run build"
   },
   "keywords": ["ai", "meeting", "summarizer", "react", "nodejs", "mongodb"],
   "author": "Your Name",

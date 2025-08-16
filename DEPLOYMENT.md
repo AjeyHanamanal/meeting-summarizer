@@ -10,9 +10,12 @@ npm run build
 
 ### 2. Deploy to Netlify
 - Connect your GitHub repository to Netlify
-- Set build command: `npm run netlify-build`
-- Set publish directory: `frontend/build`
+- **Build command**: `cd frontend && npm ci --legacy-peer-deps && npm run build`
+- **Publish directory**: `frontend/build`
+- **Node version**: 18
 - Deploy!
+
+**Alternative**: Use the `netlify.toml` file in the root directory for automatic configuration.
 
 ### 3. Environment Variables in Netlify
 Add these environment variables in Netlify dashboard:
