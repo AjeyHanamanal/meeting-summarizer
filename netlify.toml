@@ -1,10 +1,11 @@
 [build]
   publish = "frontend/build"
-  command = "cd frontend && npm install && npm run build"
+  command = "cd frontend && npm ci --production=false && npm run build"
 
 [build.environment]
   NODE_ENV = "production"
   NODE_VERSION = "18"
+  CI = "false"
 
 [[redirects]]
   from = "/*"
